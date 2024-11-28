@@ -1,0 +1,8 @@
+# program to count vowel and consonant 
+def count_vowels_consonants(s):
+    vowels = "aeiouAEIOU"
+    s = s.replace(" ", "")  # Remove spaces
+    vowel_count = sum(1 for char in s if char in vowels)
+    consonant_count = sum(1 for char in s if char.isalpha() and char not in vowels)
+    return vowel_count, consonant_count
+
